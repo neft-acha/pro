@@ -1,0 +1,113 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.critical {
+    background-color: #ffcccc !important;
+}
+
+.urgent {
+    background-color: #ffe6cc !important;
+}
+
+.moderate {
+    background-color: #ffffcc !important;
+}
+
+.mild {
+    background-color: #ccffcc !important;
+}
+
+.severity-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.critical-indicator {
+    background-color: #dc3545;
+}
+
+.urgent-indicator {
+    background-color: #fd7e14;
+}
+
+.moderate-indicator {
+    background-color: #ffc107;
+}
+
+.mild-indicator {
+    background-color: #28a745;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.counter {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 22%;
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+.alert-critical {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .auth-container, .main-container {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .counter {
+        width: 45%;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
